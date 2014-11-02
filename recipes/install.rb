@@ -86,5 +86,6 @@ bash "load_fuse" do
 end
 
 template node[:s3fs_fuse][:version_file] do
+  source "s3fs_fuse_version.erb"
   mode 0655
 end
